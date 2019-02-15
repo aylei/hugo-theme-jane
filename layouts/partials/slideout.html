@@ -1,5 +1,8 @@
 <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
+    {{ with .Site.Params.logoImage }}
+      <img src="/img/{{ . }}" alt="Author Image" class="img-circle header-avatar">
+    {{ end }}
     <a href="{{ "/" | relLangURL }}" class="logo">
       {{- if .Site.Params.logoTitle -}}
         {{ .Site.Params.logoTitle }}

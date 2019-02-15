@@ -3,13 +3,20 @@
 // =============================
 
 .logo-wrapper {
-  float: left;
-  padding-left: 15px;
-
   .logo {
     font-size: $logo-font-size;
     font-family: $logo-font-family;
   }
+}
+
+.header-avatar {
+  height: 48px;
+  width: 48px;
+  margin-right: 12px;
+}
+
+.img-circle {
+  border-radius: 50%;
 }
 
 @include max-screen() {

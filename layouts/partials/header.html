@@ -1,10 +1,15 @@
 <div class="logo-wrapper">
   <a href="{{ "/" | relLangURL }}" class="logo">
-    {{ if .Site.Params.logoTitle }}
-      {{ .Site.Params.logoTitle | safeHTML }}
-    {{ else }}
-      {{ .Site.Title }}
+    {{ with .Site.Params.logoImage }}
+       <img src="/img/{{ . }}" alt="Author Image" class="img-circle header-avatar">
     {{ end }}
+    <span>
+        {{ if .Site.Params.logoTitle }}
+          {{ .Site.Params.logoTitle | safeHTML }}
+        {{ else }}
+          {{ .Site.Title }}
+        {{ end }}
+    </span>
   </a>
 </div>
 

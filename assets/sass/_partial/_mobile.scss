@@ -5,6 +5,14 @@
 .mobile-navbar {
   display: none;
   position: fixed;
+  .header-avatar {
+    height: 36px;
+    width: 36px;
+    margin-right: 12px;
+  }
+  .img-circle {
+    border-radius: 50%;
+  }
   top: 0;
   left: 0;
   width: 100%;

@@ -3,8 +3,10 @@
 // =============================
 
 .site-navbar {
+  flex-grow: 2;
+  display: flex;
+  justify-content: flex-end;
   .menu {
-    float: right;
     padding-right: 15px;
     font-family: $global-serif-font-family;
 
