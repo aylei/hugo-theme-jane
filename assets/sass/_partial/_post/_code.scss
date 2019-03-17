@@ -13,6 +13,10 @@ code, pre {
   font-family: $code-font-family;
 }
 
+p > code {
+  background: $code-background;
+  color: $code-color;
+}
 
 // chroma code block style
 .highlight > .chroma {
